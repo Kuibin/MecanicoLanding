@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+/* body{ */
+    /* background-image: linear-gradient(-225deg, #35F2DF 0%, #121212 56%, #F20C1F 100%); */
+   /* background-image: linear-gradient(to top, #F20C1F 0%, #121212 49%, #35F2DF 100%); */
+   /* background-image: linear-gradient(to top, #36f2df42 0%, #2424240a 10%, #2424240e 90%, #f40b1e56 100%), url("./assets/img/latam.png");
+   width: 100%;
+   height: 1080px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   /* overflow: hidden; /*para q no salga del hero*/
+/* }  */
+label{
+   color: #fff;
+}
+.fondoMecanico{
+    /* background-image: linear-gradient(to right, rgba(67, 233, 122, 0) 0%, rgba(56, 249, 214, 0) 100%), url("../img/PORTADA.JPG"); */
+    background-image: linear-gradient(to top, #36f2df42 0%, #2424240a 10%, #2424240e 90%, #f40b1e56 100%), url("./assets/img/latam.png");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden; /*para q no salga del hero*/
+
+    border: none;
+    
+    /* top: 20px;  */
+    /*por si ocupamos espacio arriba*/
+}
+.contenedor{
+    padding: 80px 0;
+}
+/* Cards */
+
+.content-cards{
+    display: flex; /*Para poner uno a lado del otro*/
+    width: 100%;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    /* si elemnto se pasa se pone abajo */
+}
+
+.card{
+    width: 35%;
+    height: 480px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+
+    margin: 1rem;
+    padding: 1rem;
+    /* IMPORTANTE */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Cuando pases el mouse sobre el shadow */
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* propiedades para los iconos del kit */
+.card i{
+    margin: 30px 0 20px 0;
+    color: #02F6C4;
+    font-size: 50px;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.card img {
+    width: 180px;
+    /* max-height: 100%;  */
+   }
+.servicios{
+    background: #32f2df;
+}
+/* contacto */
+
+.contacto{
+    background: #f20c1f;
+    color: #242424;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #242424;
+    outline: none;
+    border: 1px  solid #242424;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #242424;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"], 
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: tomato;
+    background: #fff;
+}
